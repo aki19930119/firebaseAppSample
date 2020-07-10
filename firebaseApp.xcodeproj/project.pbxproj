@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		619D4D4E24B7BCD500836DBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 619D4D4C24B7BCD500836DBC /* Main.storyboard */; };
 		619D4D5024B7BCD800836DBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 619D4D4F24B7BCD800836DBC /* Assets.xcassets */; };
 		619D4D5324B7BCD800836DBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 619D4D5124B7BCD800836DBC /* LaunchScreen.storyboard */; };
+		619D4D5B24B7C93700836DBC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 619D4D5A24B7C93700836DBC /* GoogleService-Info.plist */; };
+		619D4D5D24B7CFD300836DBC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619D4D5C24B7CFD300836DBC /* User.swift */; };
+		9B350531625AAC31EDAEE9A6 /* Pods_firebaseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B68840589F1CCBF2EFFA32E0 /* Pods_firebaseApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		619D4D4F24B7BCD800836DBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		619D4D5224B7BCD800836DBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		619D4D5424B7BCD800836DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		619D4D5A24B7C93700836DBC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Googleinfo/firebaseApp/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		619D4D5C24B7CFD300836DBC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7BD0B087BD8D080159855040 /* Pods-firebaseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebaseApp.release.xcconfig"; path = "Target Support Files/Pods-firebaseApp/Pods-firebaseApp.release.xcconfig"; sourceTree = "<group>"; };
+		A91ADAF02EDE0E3D17A98FC2 /* Pods-firebaseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebaseApp.debug.xcconfig"; path = "Target Support Files/Pods-firebaseApp/Pods-firebaseApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B68840589F1CCBF2EFFA32E0 /* Pods_firebaseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firebaseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B350531625AAC31EDAEE9A6 /* Pods_firebaseApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				619D4D4524B7BCD500836DBC /* firebaseApp */,
 				619D4D4424B7BCD500836DBC /* Products */,
+				7D35287B56C6D4BE924A609C /* Pods */,
+				6D10F746C81F5282587AEA8A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +74,27 @@
 				619D4D4F24B7BCD800836DBC /* Assets.xcassets */,
 				619D4D5124B7BCD800836DBC /* LaunchScreen.storyboard */,
 				619D4D5424B7BCD800836DBC /* Info.plist */,
+				619D4D5A24B7C93700836DBC /* GoogleService-Info.plist */,
+				619D4D5C24B7CFD300836DBC /* User.swift */,
 			);
 			path = firebaseApp;
+			sourceTree = "<group>";
+		};
+		6D10F746C81F5282587AEA8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B68840589F1CCBF2EFFA32E0 /* Pods_firebaseApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D35287B56C6D4BE924A609C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A91ADAF02EDE0E3D17A98FC2 /* Pods-firebaseApp.debug.xcconfig */,
+				7BD0B087BD8D080159855040 /* Pods-firebaseApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 619D4D5724B7BCD800836DBC /* Build configuration list for PBXNativeTarget "firebaseApp" */;
 			buildPhases = (
+				1AFACE3445A1ED61FA3020BF /* [CP] Check Pods Manifest.lock */,
 				619D4D3F24B7BCD500836DBC /* Sources */,
 				619D4D4024B7BCD500836DBC /* Frameworks */,
 				619D4D4124B7BCD500836DBC /* Resources */,
+				F382F68A8BCB0A48B84DFD56 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				619D4D5324B7BCD800836DBC /* LaunchScreen.storyboard in Resources */,
+				619D4D5B24B7C93700836DBC /* GoogleService-Info.plist in Resources */,
 				619D4D5024B7BCD800836DBC /* Assets.xcassets in Resources */,
 				619D4D4E24B7BCD500836DBC /* Main.storyboard in Resources */,
 			);
@@ -133,11 +166,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1AFACE3445A1ED61FA3020BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-firebaseApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F382F68A8BCB0A48B84DFD56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-firebaseApp/Pods-firebaseApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-firebaseApp/Pods-firebaseApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-firebaseApp/Pods-firebaseApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		619D4D3F24B7BCD500836DBC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				619D4D5D24B7CFD300836DBC /* User.swift in Sources */,
 				619D4D4B24B7BCD500836DBC /* ViewController.swift in Sources */,
 				619D4D4724B7BCD500836DBC /* AppDelegate.swift in Sources */,
 				619D4D4924B7BCD500836DBC /* SceneDelegate.swift in Sources */,
@@ -282,6 +358,7 @@
 		};
 		619D4D5824B7BCD800836DBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A91ADAF02EDE0E3D17A98FC2 /* Pods-firebaseApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +377,7 @@
 		};
 		619D4D5924B7BCD800836DBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BD0B087BD8D080159855040 /* Pods-firebaseApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
