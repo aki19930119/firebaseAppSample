@@ -15,6 +15,7 @@
 		619D4D5324B7BCD800836DBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 619D4D5124B7BCD800836DBC /* LaunchScreen.storyboard */; };
 		619D4D5B24B7C93700836DBC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 619D4D5A24B7C93700836DBC /* GoogleService-Info.plist */; };
 		619D4D5D24B7CFD300836DBC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619D4D5C24B7CFD300836DBC /* User.swift */; };
+		619D4D6124B973F400836DBC /* scott-jackson-C6SvKG2uDHU-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 619D4D6024B973F400836DBC /* scott-jackson-C6SvKG2uDHU-unsplash.jpg */; };
 		9B350531625AAC31EDAEE9A6 /* Pods_firebaseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B68840589F1CCBF2EFFA32E0 /* Pods_firebaseApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		619D4D5424B7BCD800836DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		619D4D5A24B7C93700836DBC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Googleinfo/firebaseApp/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		619D4D5C24B7CFD300836DBC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		619D4D6024B973F400836DBC /* scott-jackson-C6SvKG2uDHU-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "scott-jackson-C6SvKG2uDHU-unsplash.jpg"; path = "../../../../../Downloads/scott-jackson-C6SvKG2uDHU-unsplash.jpg"; sourceTree = "<group>"; };
 		7BD0B087BD8D080159855040 /* Pods-firebaseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebaseApp.release.xcconfig"; path = "Target Support Files/Pods-firebaseApp/Pods-firebaseApp.release.xcconfig"; sourceTree = "<group>"; };
 		A91ADAF02EDE0E3D17A98FC2 /* Pods-firebaseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebaseApp.debug.xcconfig"; path = "Target Support Files/Pods-firebaseApp/Pods-firebaseApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B68840589F1CCBF2EFFA32E0 /* Pods_firebaseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firebaseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +78,7 @@
 				619D4D5424B7BCD800836DBC /* Info.plist */,
 				619D4D5A24B7C93700836DBC /* GoogleService-Info.plist */,
 				619D4D5C24B7CFD300836DBC /* User.swift */,
+				619D4D6024B973F400836DBC /* scott-jackson-C6SvKG2uDHU-unsplash.jpg */,
 			);
 			path = firebaseApp;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				619D4D5B24B7C93700836DBC /* GoogleService-Info.plist in Resources */,
 				619D4D5024B7BCD800836DBC /* Assets.xcassets in Resources */,
 				619D4D4E24B7BCD500836DBC /* Main.storyboard in Resources */,
+				619D4D6124B973F400836DBC /* scott-jackson-C6SvKG2uDHU-unsplash.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

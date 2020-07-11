@@ -9,6 +9,8 @@
 import UIKit
 import Firebase
 import FirebaseFirestore
+import FirebaseStorage
+
 
 class ViewController: UIViewController{
     
@@ -18,6 +20,8 @@ class ViewController: UIViewController{
     @IBOutlet weak var registerButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var deleteButton: UIButton!
+    @IBOutlet weak var uploadButton: UIButton!
+    @IBOutlet weak var imageViewButton: UIImageView!
     
     
     override func viewDidLoad() {
@@ -79,8 +83,41 @@ class ViewController: UIViewController{
             print("ログインに成功しました")
         }
     }
-}
-extension ViewController: UITextFieldDelegate {
     
+    @IBAction func tappedUploadButton(_ sender: Any) {
+        
+        //ストレージサーバのURLを取得
+        let storage = Storage.storage().reference(forURL: "gs://fir-app-ae524.appspot.com")
+        
+        // パス: あなた固有のURL/profileImage/{user.uid}.jpeg
+        let imageRef = storage.child("profileImage").child("image.jpeg")
+        
+        //保存したい画像のデータを変数として持つ
+        var ProfileImageData: Data = Data()
+        
+        //プロフィール画像が存在すれば
+        if imageViewButton.image != nil {
+            
+            //画像を圧縮
+            ProfileImageData = (imageViewButton.image?.jpegData(compressionQuality: 0.01))!
+            
+        }
+        
+        //storageに画像を送信
+        imageRef.putData(ProfileImageData, metadata: nil) { (metaData, error) in
+            
+            //エラーであれば
+            if error != nil {
+                
+                print(error.debugDescription)
+                return  //これより下にはいかないreturn
+                
+            }
+            
+        }
+    }
+}
+    extension ViewController: UITextFieldDelegate {
+        
 }
 
